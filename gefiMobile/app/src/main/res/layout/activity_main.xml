@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.MainActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/barra_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.MyApplication.AppBarOverlay">
+
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tabIndicatorColor="?attr/colorPrimary">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_requisicao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/requisicao" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_ferramentas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ferramentas" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_controle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/controle" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/barra_menu"
+        tools:ignore="MissingConstraints">
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

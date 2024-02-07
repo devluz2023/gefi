@@ -1,0 +1,49 @@
+{
+  "name": "gefi",
+  "version": "1.0.0",
+  "description": "", 
+  "main": "server.js",
+  "scripts": {
+    "start": "pm2 start server.js --name gefi",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/binhojulix/gefi.git"
+  },
+  "author": "fabio julio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/binhojulix/gefi.git"
+  },
+  "homepage": "https://github.com/binhojulix/gefi.git#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "consign": "^0.1.6",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.0.0",
+    "debug": "^4.2.0",
+    "dotenv": "^8.2.0",
+    "dotenv-safe": "^8.2.0",
+    "express": "^4.17.1",
+    "express-load": "^1.1.16",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.9.2",
+    "jsonwebtoken": "^8.5.1",
+    "method-override": "^3.0.0",
+    "moment": "^2.24.0",
+    "mysql": "^2.17.1",
+    "mysql2": "^2.2.5",
+    "path": "^0.12.7",
+    "pg": "^8.5.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4",
+    "sequelize-cli": "^5.5.1"
+  }
+}
