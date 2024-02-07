@@ -15,3 +15,7 @@ Developed using Android Java, Gefi Mobile would be the mobile application versio
 # Gefi Server:
 
 Implemented in Node.js on the backend, Gefi Server likely provides server functionalities for the Gefi software, including detailed configuration management and other operations related to asset control.
+
+
+
+![Image Description](gefi.jpeg)
